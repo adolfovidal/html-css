@@ -13,6 +13,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -29,8 +30,15 @@
         }
 
         thead, tfoot {
-            background-color: gray;
+            background-color: rgb(73, 70, 70);
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(73, 70, 70));
+            color: white;;
         }
 
         tbody > tr:nth-child(even) { 
