@@ -25,12 +25,47 @@
             border: 1px solid black;
             padding: 8px;
         }
+
+        col.cnome {
+            background-color: chartreuse;
+        }
+
+        col.cgroupo {
+            background-color: red;
+        }
+        
+        /*
+        Colunas zebradas
+
+        .amarelo {
+            background-color: yellow
+        }
+
+        .vermelho {
+            background: red
+        }
+        */
+
     </style>
 </head>
 <body>
     <h1>Exercícios de tabelas</h1>
 
     <table>
+        <colgroup>
+            <!--
+            <col classe="amarelo">
+
+            -->
+
+            <col class="cnome">
+            <col class="cgroupo" span="2">
+            <!--
+            <col class="csexo">
+            <col class="cidade">
+            -->
+            <col class="cprof">
+        </colgroup>
         <caption>Cadastro</caption>
         <tr>
             <th scope="col">Nome</th>
