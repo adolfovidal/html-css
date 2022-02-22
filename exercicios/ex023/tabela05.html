@@ -19,12 +19,28 @@
             border: 2px solid black;
             padding: 10px;
         }
+
+        thead {
+            background-color: rgba(90, 89, 89, 0.637);
+            color: white;
+        }
+
+        tr#m1, tr#m2 {
+            background-color: rgba(90, 89, 89, 0.637);
+            color: white;
+            text-align: left;
+        }
+
+        td {
+            text-align: center;
+        }
+        
     </style>
 </head>
 <body>
     <h1>Média dos Alunos</h1>
     <table>
-        <thead>
+        <thead class="cab">
             <th rowspan="2">Área</th>
             <th rowspan="2">Disciplina</th>
             <th colspan="2">Notas</th>
@@ -60,7 +76,7 @@
                 <td>0.0</td>
                 <td>0.0</td>
             </tr>
-            <tr>
+            <tr id="m1">
                 <th colspan="4">Média de Exatas</th>
                 <td>0.0</td>
             </tr>
@@ -77,7 +93,7 @@
                 <td>0.0</td>
                 <td>0.0</td>
             </tr>
-            <tr>
+            <tr id="m2">
                 <th colspan="4">Média de Humanas</th>
                 <td>0.0</td>
             </tr>
